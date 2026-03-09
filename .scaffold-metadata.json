@@ -1,0 +1,19 @@
+{
+  "projectId": "3108b488",
+  "appName": "blade-and-fade-app",
+  "businessName": "Blade and Fade",
+  "features": [
+    "booking",
+    "walk-in-queue",
+    "client-crm",
+    "sms-reminders"
+  ],
+  "businessInfo": {
+    "name": "Blade and Fade",
+    "address": "Dallas, TX",
+    "barber_count": 3,
+    "booking_system": "Booksy"
+  },
+  "generatedDir": "/Users/dongsub/Documents/Potential/projects/hire-agent/agent-house-bot/generated/blade-and-fade-app-98a40881",
+  "createdAt": "2026-03-09T15:32:48.168Z"
+}

@@ -1,0 +1,45 @@
+{
+  "projectDir": "/Users/dongsub/Documents/Potential/projects/hire-agent/agent-house-bot/generated/blade-and-fade-app-98a40881",
+  "orderId": "a4196593-484c-4678-8805-4c9d40d6119e",
+  "input": {
+    "app_name": "blade-and-fade-app",
+    "features": [
+      "booking",
+      "walk-in-queue",
+      "client-crm",
+      "sms-reminders"
+    ],
+    "business_info": {
+      "name": "Blade and Fade",
+      "address": "Dallas, TX",
+      "barber_count": 3,
+      "booking_system": "Booksy"
+    },
+    "message": "Mapping out your project spec now — I'll have it ready in a minute.",
+    "stop_after": "prd"
+  },
+  "completedPhases": [
+    "init",
+    "prd",
+    "design",
+    "database",
+    "backend",
+    "frontend",
+    "integrate",
+    "test-api",
+    "test-browser"
+  ],
+  "phaseResults": [
+    "Setting up your project: Scaffolded 7 files",
+    "Generating your requirements document: Generated PRD: blade-and-fade-app_PRD_260309.md (12088 chars). Sent to client for review.",
+    "Designing your pages: Generated 2 HTML designs: User App, Admin Dashboard",
+    "Setting up your data storage: Generated 9 database files (entities + migration)",
+    "Building the backend: Generated 12 backend files (controllers, services, DTOs)",
+    "Building the user interface: Generated 9 frontend files (pages, components, hooks)",
+    "Wiring frontend to backend APIs: Integration included in frontend build",
+    "Running API tests: API tests skipped (test infrastructure pending)",
+    "Running browser QA tests: Browser tests skipped (test infrastructure pending)"
+  ],
+  "createdAt": "2026-03-09T15:32:24.301Z",
+  "updatedAt": "2026-03-09T15:39:56.866Z"
+}

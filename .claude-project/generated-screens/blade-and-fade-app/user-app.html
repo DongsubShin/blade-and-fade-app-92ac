@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade and Fade | Premium Barbershop & Grooming</title>
+    <meta name="description" content="Premium barbering services with easy online booking and live walk-in tracking.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify CDN -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A5F',
+                        secondary: '#F59E0B',
+                        slate: {
+                            50: '#F8FAFC',
+                            800: '#1E293B',
+                            900: '#0F172A',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'md': '6px',
+                        'lg': '8px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1E293B;
+            background-color: #FFFFFF;
+        }
+        .logo-text {
+            color: #1E3A5F;
+            font-weight: 700;
+            font-size: 1.25rem; /* text-xl */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white border-b border-slate-100 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="#" class="logo-text">Blade and Fade</a>
+                </div>
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-slate-800 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="#queue" class="text-slate-800 hover:text-primary font-medium transition-colors">Walk-In Queue</a>
+                    <a href="#booking" class="bg-primary text-white px-5 py-2 rounded-md font-medium hover:bg-opacity-90 transition-all shadow-sm">Book Now</a>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-900">
+                        <iconify-icon icon="lucide:menu" width="24"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block py-1 px-3 rounded-full bg-secondary/10 text-secondary font-bold text-xs uppercase tracking-wider mb-4">
+                        Est. 2024 • Premium Grooming
+                    </span>
+                    <h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
+                        Precision Cuts for the <span class="text-primary">Modern Gentleman.</span>
+                    </h1>
+                    <p class="text-lg text-slate-800 mb-8 max-w-lg">
+                        Experience the perfect blend of traditional barbering and modern style. Book your appointment or join our live walk-in queue today.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#booking" class="bg-primary text-white px-8 py-4 rounded-md font-bold text-center hover:shadow-lg transition-all">
+                            Schedule Appointment
+                        </a>
+                        <a href="#queue" class="bg-white border-2 border-primary text-primary px-8 py-4 rounded-md font-bold text-center hover:bg-slate-50 transition-all">
+                            View Live Queue
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=800" alt="Barber Shop Interior" class="object-cover w-full h-full">
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-md border border-slate-100 hidden md:block">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white">
+                                <iconify-icon icon="lucide:clock" width="24"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-500">Current Wait Time</p>
+                                <p class="text-xl font-bold text-slate-900">15 Minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Our Services</h2>
+                <p class="text-slate-800 max-w-2xl mx-auto">From classic fades to luxury hot towel shaves, our expert barbers have you covered.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 bg-slate-50 rounded-lg border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-primary mb-4">
+                        <iconify-icon icon="lucide:scissors" width="32"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Signature Fade</h3>
+                    <p class="text-slate-800 mb-4">A precision haircut tailored to your head shape and style preference.</p>
+                    <p class="text-2xl font-bold text-primary">$35</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-8 bg-slate-50 rounded-lg border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-primary mb-4">
+                        <iconify-icon icon="lucide:user-check" width="32"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Beard Sculpting</h3>
+                    <p class="text-slate-800 mb-4">Full beard shaping with straight razor line-up and conditioning oil.</p>
+                    <p class="text-2xl font-bold text-primary">$25</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-8 bg-slate-50 rounded-lg border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-primary mb-4">
+                        <iconify-icon icon="lucide:sparkles" width="32"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">The Full Works</h3>
+                    <p class="text-slate-800 mb-4">Signature fade, beard trim, and a relaxing hot towel straight razor shave.</p>
+                    <p class="text-2xl font-bold text-primary">$55</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Queue Section -->
+    <section id="queue" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden">
+                <div class="p-6 border-b border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                            <span class="relative flex h-3 w-3">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+                            </span>
+                            Live Walk-In Queue
+                        </h2>
+                        <p class="text-slate-800 text-sm">Real-time updates for today: <span class="font-bold">Oct 24, 2023</span></p>
+                    </div>
+                    <button class="bg-secondary text-white px-6 py-2 rounded-md font-bold hover:bg-opacity-90 transition-all">
+                        Join Queue Remotely
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-slate-50 text-slate-500 text-sm uppercase">
+                            <tr>
+                                <th class="px-6 py-4 font-semibold">Position</th>
+                                <th class="px-6 py-4 font-semibold">Client</th>
+                                <th class="px-6 py-4 font-semibold">Barber Preference</th>
+                                <th class="px-6 py-4 font-semibold">Est. Wait</th>
+                                <th class="px-6 py-4 font-semibold">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr>
+                                <td class="px-6 py-4 font-bold text-primary">#1</td>
+                                <td class="px-6 py-4">Marcus R.</td>
+                                <td class="px-6 py-4">Alex (Master Barber)</td>
+                                <td class="px-6 py-4">In Chair</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 rounded bg-blue-100 text-blue-700 text-xs font-bold uppercase">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-bold text-primary">#2</td>
+                                <td class="px-6 py-4">David L.</td>
+                                <td class="px-6 py-4">Any Barber</td>
+                                <td class="px-6 py-4">5 mins</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 rounded bg-amber-100 text-amber-700 text-xs font-bold uppercase">Next Up</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-bold text-primary">#3</td>
+                                <td class="px-6 py-4">James T.</td>
+                                <td class="px-6 py-4">Jordan</td>
+                                <td class="px-6 py-4">20 mins</td>
+                                <td class="px-6 py-4"><span class="px-2 py-1 rounded bg-slate-100 text-slate-600 text-xs font-bold uppercase">Waiting</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Book an Appointment</h2>
+                <p class="text-slate-800">Secure your spot with your favorite barber in seconds.</p>
+            </div>
+            <form class="space-y-6 bg-slate-50 p-8 rounded-lg border border-slate-100 shadow-sm">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Barber Selection -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-900">Select Barber</label>
+                        <select class="w-full p-3 rounded-md border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none">
+                            <option>Alex (Master Barber)</option>
+                            <option>Jordan (Stylist)</option>
+                            <option>Sam (Classic Cuts)</option>
+                            <option>First Available</option>
+                        </select>
+                    </div>
+                    <!-- Service Selection -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-900">Select Service</label>
+                        <select class="w-full p-3 rounded-md border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none">
+                            <option>Signature Fade ($35)</option>
+                            <option>Beard Sculpting ($25)</option>
+                            <option>The Full Works ($55)</option>
+                            <option>Buzz Cut ($20)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Date Picker -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-900">Date</label>
+                        <input type="date" class="w-full p-3 rounded-md border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none">
+                    </div>
+                    <!-- Time Slots -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-900">Available Time</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button type="button" class="py-2 text-sm border border-slate-200 rounded-md hover:bg-primary hover:text-white transition-colors">09:00</button>
+                            <button type="button" class="py-2 text-sm border border-slate-200 rounded-md hover:bg-primary hover:text-white transition-colors">10:30</button>
+                            <button type="button" class="py-2 text-sm bg-primary text-white rounded-md">11:00</button>
+                            <button type="button" class="py-2 text-sm border border-slate-200 rounded-md hover:bg-primary hover:text-white transition-colors">13:30</button>
+                            <button type="button" class="py-2 text-sm border border-slate-200 rounded-md hover:bg-primary hover:text-white transition-colors">15:00</button>
+                            <button type="button" class="py-2 text-sm border border-slate-200 rounded-md hover:bg-primary hover:text-white transition-colors">16:30</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2 pt-4">
+                    <label class="block text-sm font-bold text-slate-900">Your Details</label>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Full Name" class="w-full p-3 rounded-md border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none">
+                        <input type="tel" placeholder="Phone Number" class="w-full p-3 rounded-md border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none">
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-primary text-white py-4 rounded-md font-bold text-lg hover:bg-opacity-95 transition-all shadow-md mt-4">
+                    Confirm Booking
+                </button>
+                <p class="text-center text-xs text-slate-500">You will receive an SMS reminder 1 hour before your appointment.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="#" class="text-white font-bold text-xl mb-6 block">Blade and Fade</a>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Premium grooming services for the modern man. We pride ourselves on precision, style, and a first-class experience.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-secondary">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#queue" class="hover:text-white transition-colors">Walk-In Queue</a></li>
+                        <li><a href="#booking" class="hover:text-white transition-colors">Book Now</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-secondary">Hours</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li class="flex justify-between"><span>Mon - Fri:</span> <span>9am - 8pm</span></li>
+                        <li class="flex justify-between"><span>Saturday:</span> <span>9am - 6pm</span></li>
+                        <li class="flex justify-between"><span>Sunday:</span> <span>10am - 4pm</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-secondary">Contact</h4>
+                    <ul class="space-y-4 text-sm text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:map-pin" class="mt-1"></iconify-icon>
+                            <span>123 Grooming Lane, <br>Barber City, BC 56789</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:phone"></iconify-icon>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="lucide:mail"></iconify-icon>
+                            <span>hello@bladeandfade.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-slate-500">© 2024 Blade and Fade. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-slate-500 hover:text-white transition-colors"><iconify-icon icon="lucide:instagram" width="20"></iconify-icon></a>
+                    <a href="#" class="text-slate-500 hover:text-white transition-colors"><iconify-icon icon="lucide:facebook" width="20"></iconify-icon></a>
+                    <a href="#" class="text-slate-500 hover:text-white transition-colors"><iconify-icon icon="lucide:twitter" width="20"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
